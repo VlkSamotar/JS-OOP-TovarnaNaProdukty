@@ -1,0 +1,90 @@
+<!-- 
+======================================================================
+PROJEKT: OOP – TOVÁRNA NA PRODUKTY
+Tvým úkolem je pomocí JavaScriptu vytvořit objekty, metody a třídy.
+Všechny výsledky vypisuj do připravených <pre> prvků v HTML.
+======================================================================
+
+🥉 ÚROVEŇ 1: Vytvoření objektu (Téma: objekty, vlastnosti, metody, this)
+----------------------------------------------------------------------
+1. Vytvoř objekt s názvem "product", který bude mít tyto vlastnosti:
+   - name
+   - price
+   - description
+
+2. Do objektu přidej metodu "printInfo()", která vypíše text:
+      "Produkt: XYZ – cena: 123 Kč"
+   Použij klíčové slovo "this" pro přístup k vlastnostem objektu.
+
+3. Zavolej metodu printInfo() a výsledek vypiš do <pre id="vypis-objektu">.
+
+----------------------------------------------------------------------
+🥈 ÚROVEŇ 2: Procházení vlastností (Téma: for...in, typeof, Object.keys)
+----------------------------------------------------------------------
+1. Pomocí cyklu "for...in" projdi všechny vlastnosti objektu "product".
+
+2. Vypiš pouze ty vlastnosti, které NEJSOU funkce.
+   (Nápověda: typeof product[key] !== "function")
+
+3. Výsledek vypiš do <pre id="vypis-vlastnosti">.
+
+BONUS:
+- Použij Object.entries(product) a vypiš klíč + hodnotu v jednom řádku.
+
+----------------------------------------------------------------------
+🥇 ÚROVEŇ 3: Třídy a instance (Téma: class, constructor, new)
+----------------------------------------------------------------------
+1. Vytvoř třídu "Product", která bude mít:
+   - vlastnosti: name, price, description
+   - metodu print(), která vypíše text o produktu
+
+2. Pomocí "new Product(...)" vytvoř alespoň 3 různé produkty.
+
+3. Vypiš je do <pre id="vypis-tridy">.
+
+SUPER BONUS:
+- Vytvoř pole produktů a pomocí cyklu vypiš všechny instance.
+
+======================================================================
+Kódování zdar! Nezapomeň nejprve kliknout na tlačítko FORK vpravo dole.
+======================================================================
+-->
+
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OOP – Továrna na produkty</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>🛒 Továrna na produkty</h1>
+    <p class="popis">Tvým úkolem je pomocí JavaScriptu vytvořit objekty, metody a třídy.</p>
+
+    <section class="sekce">
+      <h2>1) Objekt produktu</h2>
+      <p>Výsledky se zobrazí zde:</p>
+      <pre id="vypis-objektu"></pre>
+    </section>
+
+    <section class="sekce">
+      <h2>2) Procházení vlastností</h2>
+      <pre id="vypis-vlastnosti"></pre>
+    </section>
+
+    <section class="sekce">
+      <h2>3) Třída Product</h2>
+      <p>Instance třídy se zobrazí zde:</p>
+      <pre id="vypis-tridy"></pre>
+    </section>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

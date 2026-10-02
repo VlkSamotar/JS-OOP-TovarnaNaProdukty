@@ -1,0 +1,36 @@
+body {
+  background: #0d1b2a;
+  color: #e0e1dd;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 600px;
+  background: #1b263b;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sekce {
+  margin-top: 30px;
+  padding: 20px;
+  background: #415a77;
+  border-radius: 10px;
+}
+
+pre {
+  background: #0d1b2a;
+  padding: 15px;
+  border-radius: 8px;
+  min-height: 40px;
+}
